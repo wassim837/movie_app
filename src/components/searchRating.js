@@ -14,7 +14,7 @@ export  class SearchMovie extends Component {
 const SearchRating = ({ rate, starClicked }) => {
     return (
         <div>
-         <a href='#'>  {Array.from({ length: 5 }, (star, i) => (
+         <a href='#' className="rating">  {Array.from({ length: 5 }, (star, i) => (
                 <span onClick={() => { starClicked(i + 1) }}>
                     {i < rate ? "★" : "☆"}
                 </span>
